@@ -22,6 +22,8 @@ This application can serve as a starting point for developers who want to build 
     <li><a href="https://www.instagram.com/heshan_thenura/">Instagram</a></li>
     <li><a href="https://youtube.com/@heshanthenura">YouTube</a></li>
     <li><a href="https://www.tiktok.com/@heshanthenura">TikTok</a></li>
-
 </ul>
+
+### [E-Mail](mailto:heshanthenura@protonmail.com)
+
     
