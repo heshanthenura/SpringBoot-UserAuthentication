@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin:0;
+}
+
+#formWrapContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#formWrap {
+    width: 400px;
+    border: solid 1px #2f1793;
+}
+
+
+#formWrap > h1 {
+    background-color: #2f1793;
+    color: white;
+    font-family: "DejaVu Sans Condensed";
+    font-size: 26px;
+    text-align: center;
+}
+
+#loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#username {
+    width: 60%;
+    margin: 5px 0px;
+    padding: 5px;
+    border: solid 1px black;
+}
+
+#password {
+    width: 60%;
+    margin: 5px 0px;
+    padding: 5px;
+    border: solid 1px black;
+
+}
+
+#rememberAndForgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+
+    margin: 10px 0px;
+}
+#rememberAndForgot>div>{display: flex;justify-content: space-between;align-items: center}
+#rememberAndForgot>div>label{
+    font-family: "DejaVu Sans Condensed";
+    font-size: 15px;
+}
+
+#submitBtn {
+    background-color: #2f1793;
+    color: white;
+    font-family: "DejaVu Sans Condensed";
+    font-size: 20px;
+    border: none;
+    padding: 5px 5px;
+    margin: 20px 0px 20px 0px;
+}

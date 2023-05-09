@@ -1,0 +1,24 @@
+<div th:fragment="navbar" id="navFragment">
+  <nav>
+    <div id="head-link">
+      <h1>Title</h1>
+      <ul>
+        <li>link 1</li>
+        <li>link 2</li>
+        <li>link 3</li>
+      </ul>
+    </div>
+    <div id="auth">
+      <button ><a href="/signin">Sign In</a></button>
+      <button id="menuBtn">Menu</button>
+      <button><a href="/signup">Sign Up</a></button>
+    </div>
+  </nav>
+  <div id="mobileMenu" style="display: none">
+    <h3>link 1</h3>
+    <h3>link 2</h3>
+    <h3>link 3</h3>
+    <button style="background-color: white"><a style="color: black" href="/signin">Sign In</a></button>
+    <button><a href="/signup">Sign Up</a></button>
+  </div>
+</div>

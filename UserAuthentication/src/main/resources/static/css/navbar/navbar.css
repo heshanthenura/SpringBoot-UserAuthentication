@@ -1,0 +1,134 @@
+/*region desktop*/
+*{
+    /*border: 1px solid black;*/
+    padding: 0;
+    margin: 0
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f1793;
+
+    padding: 10px 5px;
+}
+
+#head-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#head-link>h1{
+    font-family: "DM Sans";
+    color: #fff;
+}
+
+#head-link>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    list-style-type: none;
+}
+
+#head-link>ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "DejaVu Sans Condensed";
+    color: #ffffff;
+}
+
+#auth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+#auth>button:first-child{
+    background-color: #2f1793;
+    font-family: "DejaVu Sans Condensed";
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#auth>button:nth-child(2){
+    background-color: #2f1793;
+    font-family: "DejaVu Sans Condensed";
+    border: solid 1px #ffffff;
+    padding: 0px 5px;
+    color: #ffffff;
+    font-size: 20px;
+    display: none;
+}
+
+#auth>button:last-child{
+    background-color: #2f1793;
+    font-family: "DejaVu Sans Condensed";
+    border: solid 1px #ffffff;
+    padding: 0px 5px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#auth>button>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/*endregion*/
+
+#mobileMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 10px 0px;
+
+    border-bottom: solid 1px #2f1793;
+}
+
+#mobileMenu>h3{
+    font-family: "DejaVu Sans Condensed";
+}
+
+#mobileMenu>button{
+    background-color: #2f1793;
+    font-family: "DejaVu Sans Condensed";
+    border: solid 1px #ffffff;
+    padding: 5px 5px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#mobileMenu>button>a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #auth>button:last-child,#auth>button:first-child{
+        display: none;
+    }
+
+    #auth>button:nth-child(2){
+        background-color: #2f1793;
+        font-family: "DejaVu Sans Condensed";
+        border: solid 1px #ffffff;
+        padding: 0px 5px;
+        color: #ffffff;
+        font-size: 20px;
+        display: block;
+    }
+
+}

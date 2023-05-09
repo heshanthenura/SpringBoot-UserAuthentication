@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign In</title>
+    <link rel="stylesheet" th:href="@{/css/navbar/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/signin/signin.css}">
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navbar}" th:id="testId" ></div>
+
+
+
+<div id="formWrapContainer">
+    <div id="formWrap">
+        <h1>USER LOGIN</h1>
+        <form action="" id="loginForm">
+            <input id="username" name="username" placeholder="USERNAME" type="text">
+            <input id="password" name="password" placeholder="PASSWORD" type="password">
+            <div id="rememberAndForgot">
+                <div><input id="rememberme" name="rememberme" type="checkbox" ><label>Remember Me</label></div>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" id="submitBtn">SIGN IN</button>
+
+        </form>
+    </div>
+</div>
+
+
+<script th:src="@{/js/navbar/navbar.js}"></script>
+<script th:src="@{/js/signin/signin.js}"></script>
+</body>
+</html>
