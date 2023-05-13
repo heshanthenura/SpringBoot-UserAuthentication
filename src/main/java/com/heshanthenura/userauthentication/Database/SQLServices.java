@@ -13,7 +13,7 @@ public class SQLServices {
     JdbcTemplate jdbcTemplate;
 
     public User findUserByUsername(String username){
-        List<User> users = jdbcTemplate.query("SELECT * FROM users WHERE username = "+"\'"+username+"\'",(resultSet, rowNum) -> new User(resultSet.getLong("id"),resultSet.getString("username"),resultSet.getString("password"),resultSet.getString("roles")));
+        List<User> users = jdbcTemplate.query("SELECT * FROM users WHERE username = "+"\'"+username+"\'",(resultSet, rowNum) -> new User(resultSet.getLong("id"), resultSet.getString("full_name"), resultSet.getString("username"),resultSet.getString("password"), resultSet.getString("email"), resultSet.getString("roles")));
         System.out.println(users.size());
         System.out.println(users.get(0).getId()+" "+users.get(0).getUsername()+" "+users.get(0).getPassword()+" "+users.get(0).getRoles());
         return users.get(0);

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" th:href="@{/css/navbar/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/profile/profile.css}">
+</head>
+<body>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<div id="profileWrapContainer">
+    <div id="profileWrap">
+        <h1>PROFILE DETAILS</h1>
+        <form action="" id="profileForm">
+            <div class="inputDiv">
+                <label>FULL NAME</label>
+                <input type="text" name="fullName" id="fullName" th:value="${fullName}">
+            </div>
+            <div class="inputDiv">
+                <label>USERNAME</label>
+                <input type="text" name="username" id="username" th:value="${username}">
+            </div>
+            <div class="inputDiv">
+                <label>EMAIL</label>
+                <input type="text" name="email" id="email" th:value="${email}">
+            </div>
+            <button type="submit" id="saveBtn">SAVE</button>
+        </form>
+    </div>
+</div>
+
+<script th:src="@{/js/navbar/navbar.js}"></script>
+</body>
+</html>

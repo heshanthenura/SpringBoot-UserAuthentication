@@ -16,26 +16,32 @@
 
     <div id="formWrap">
         <h1>SIGN UP</h1>
-        <form  id="signupForm">
+        <form  id="signupForm" th:object="${signUpModel}" th:action="@{/signup}" method="post" >
+
             <div class="inputDiv">
                 <label>FULL NAME</label>
-                <input type="text" name="fullName" id="fullName">
+                <span th:if="${#fields.hasErrors('fullName')}" th:errors="*{fullName}" class="errorLbl"></span>
+                <input type="text" name="fullName" id="fullName" th:field="*{fullName}">
             </div>
             <div class="inputDiv">
                 <label>USERNAME</label>
-                <input type="text" name="username" id="username">
+                <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="errorLbl"></span>
+                <input type="text" name="username" id="username" th:field="*{username}">
             </div>
             <div class="inputDiv">
                 <label>PASSWORD</label>
-                <input type="text" name="password" id="password">
+                <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="errorLbl"></span>
+                <input type="password" name="password" id="password" th:field="*{password}">
             </div>
             <div class="inputDiv">
                 <label>CONFIRM PASSWORD</label>
-                <input type="text" name="confPassword" id="confPassword">
+                <span th:if="${#fields.hasErrors('confPassword')}" th:errors="*{confPassword}" class="errorLbl"></span>
+                <input type="password" name="confPassword" id="confPassword" th:field="*{confPassword}">
             </div>
             <div class="inputDiv">
                 <label>EMAIL</label>
-                <input type="text" name="email" id="email">
+                <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="errorLbl"></span>
+                <input type="text" name="email" id="email" th:field="*{email}">
             </div>
 
             <button type="submit" id="signupBtn">SIGN UP</button>

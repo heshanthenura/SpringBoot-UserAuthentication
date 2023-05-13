@@ -5,7 +5,7 @@
       <ul>
         <li>link 1</li>
         <li>link 2</li>
-        <li>link 3</li>
+        <li sec:authorize="isAuthenticated()"><a href="/profile">Profile</a></li>
       </ul>
     </div>
     <div id="auth">
@@ -18,7 +18,7 @@
   <div id="mobileMenu" style="display: none">
     <h3>link 1</h3>
     <h3>link 2</h3>
-    <h3>link 3</h3>
+    <h3 sec:authorize="isAuthenticated()"><a href="/profile">Profile</a></h3>
     <div sec:authorize="isAnonymous()"><button style="background-color: white"><a style="color: black" href="/signin">Sign In</a></button></div>
     <div sec:authorize="isAnonymous()"><button><a href="/signup">Sign Up</a></button></div>
     <div sec:authorize="isAuthenticated()"><button id="mobileLogoutBtn"><a href="/logout">Logout</a></button></div>

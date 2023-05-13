@@ -17,15 +17,23 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
+import javax.sql.DataSource;
+import java.util.UUID;
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration {
+
+    @Autowired
+    private DataSource dataSource;
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests()
                 .requestMatchers("/").permitAll()
                 .requestMatchers("/signin").permitAll()
                 .requestMatchers("/signup").permitAll()
+                .requestMatchers("/profile").hasAnyAuthority("USER","ADMIN")
                 .requestMatchers("/test").hasAnyAuthority("USER","ADMIN")
                 .anyRequest()
                 .authenticated()
@@ -35,7 +43,10 @@ public class SecurityConfiguration {
                 .formLogin()
                 .loginPage("/signin").permitAll()
                 .and()
-                .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/").permitAll();
+                .logout().deleteCookies("JSESSIONID").logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/").permitAll()
+                .and()
+                .rememberMe()
+                .key("uniqueAndSecret");
 
         return http.build();
     }

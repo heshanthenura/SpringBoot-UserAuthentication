@@ -1,9 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-#formWrapContainer {
+#profileWrapContainer {
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -12,18 +7,12 @@
     margin-top: 50px;
 }
 
-#formWrap {
+#profileWrap {
     width: 400px;
     border: solid 1px #2f1793;
 }
 
-.errorLbl{
-    color: Red;
-    font-size: 20px;
-    font-family: Arial;
-}
-
-#formWrap > h1 {
+#profileWrap > h1 {
     background-color: #2f1793;
     color: white;
     font-family: "DejaVu Sans Condensed";
@@ -31,7 +20,7 @@
     text-align: center;
 }
 
-#signupForm{
+#profileForm{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +48,7 @@ input[type=text],input[type=password]{
     gap: 2px;
 }
 
-#signupBtn{
+#saveBtn{
     background-color: #2f1793;
     color: white;
     font-family: "DejaVu Sans Condensed";

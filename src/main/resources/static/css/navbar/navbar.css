@@ -47,7 +47,7 @@ nav{
     font-family: "DejaVu Sans Condensed";
     color: #ffffff;
 }
-
+#head-link>ul>li>a{text-decoration: none;color: white}
 #auth{
     display: flex;
     justify-content: space-between;
@@ -115,10 +115,11 @@ nav{
     border-bottom: solid 1px #2f1793;
 }
 
-
 #mobileMenu>h3{
     font-family: "DejaVu Sans Condensed";
 }
+
+#mobileMenu>h3>a{text-decoration: none;color: black }
 
 #mobileMenu>div>button{
     background-color: #2f1793;
