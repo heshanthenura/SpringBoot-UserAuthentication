@@ -9,16 +9,21 @@
       </ul>
     </div>
     <div id="auth">
-      <button ><a href="/signin">Sign In</a></button>
-      <button id="menuBtn">Menu</button>
-      <button><a href="/signup">Sign Up</a></button>
+      <div sec:authorize="isAnonymous()"><button id="signinBtn"><a href="/signin">Sign In</a></button></div>
+      <div sec:authorize="isAnonymous()"><button id="signupBtnNav"><a href="/signup">Sign Up</a></button></div>
+      <div><button id="menuBtn">Menu</button></div>
+      <div sec:authorize="isAuthenticated()"><button id="logoutBtn"><a href="/logout">Logout</a></button></div>
     </div>
   </nav>
   <div id="mobileMenu" style="display: none">
     <h3>link 1</h3>
     <h3>link 2</h3>
     <h3>link 3</h3>
-    <button style="background-color: white"><a style="color: black" href="/signin">Sign In</a></button>
-    <button><a href="/signup">Sign Up</a></button>
+    <div sec:authorize="isAnonymous()"><button style="background-color: white"><a style="color: black" href="/signin">Sign In</a></button></div>
+    <div sec:authorize="isAnonymous()"><button><a href="/signup">Sign Up</a></button></div>
+    <div sec:authorize="isAuthenticated()"><button id="mobileLogoutBtn"><a href="/logout">Logout</a></button></div>
   </div>
+
+
+
 </div>

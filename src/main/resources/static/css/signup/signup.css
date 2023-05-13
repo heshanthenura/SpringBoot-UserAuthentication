@@ -17,7 +17,6 @@
     border: solid 1px #2f1793;
 }
 
-
 #formWrap > h1 {
     background-color: #2f1793;
     color: white;
@@ -26,57 +25,35 @@
     text-align: center;
 }
 
-#loginForm {
+#signupForm{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
+
+    gap: 10px;
+
+
 }
 
-.errorLbl{
-    color: Red;
-    font-size: 20px;
-    font-family: Arial;
-}
-
-#username {
-    width: 60%;
-    margin: 5px 0px;
-    padding: 5px;
+input[type=text]{
     border: solid 1px black;
-}
-
-#password {
-    width: 60%;
-    margin: 5px 0px;
     padding: 5px;
-    border: solid 1px black;
-
+    width: 60%;
 }
 
-#rememberAndForgot {
+.inputDiv{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    width: 90%;
 
-    width: 60%;
-
-    margin: 10px 0px;
+    gap: 2px;
 }
 
-#rememberAndForgot > div > {
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-#rememberAndForgot > div > label {
-    font-family: "DejaVu Sans Condensed";
-    font-size: 15px;
-}
-
-#submitBtn {
+#signupBtn{
     background-color: #2f1793;
     color: white;
     font-family: "DejaVu Sans Condensed";

@@ -5,6 +5,10 @@
     margin: 0
 }
 
+#navFragment{
+    width: 100vw;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -51,7 +55,7 @@ nav{
     gap:20px;
 }
 
-#auth>button:first-child{
+#signinBtn{
     background-color: #2f1793;
     font-family: "DejaVu Sans Condensed";
     border: none;
@@ -59,7 +63,7 @@ nav{
     font-size: 20px;
 }
 
-#auth>button:nth-child(2){
+#menuBtn{
     background-color: #2f1793;
     font-family: "DejaVu Sans Condensed";
     border: solid 1px #ffffff;
@@ -69,7 +73,7 @@ nav{
     display: none;
 }
 
-#auth>button:last-child{
+#signupBtnNav{
     background-color: #2f1793;
     font-family: "DejaVu Sans Condensed";
     border: solid 1px #ffffff;
@@ -78,10 +82,25 @@ nav{
     font-size: 20px;
 }
 
-#auth>button>a{
+#auth>div>button>a{
     text-decoration: none;
     color: #ffffff;
 }
+
+#logoutBtn{
+    background-color: #2f1793;
+    font-family: "DejaVu Sans Condensed";
+    border: solid 1px #ffffff;
+    padding: 0px 5px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#logoutBtn>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /*endregion*/
 
 #mobileMenu{
@@ -96,11 +115,12 @@ nav{
     border-bottom: solid 1px #2f1793;
 }
 
+
 #mobileMenu>h3{
     font-family: "DejaVu Sans Condensed";
 }
 
-#mobileMenu>button{
+#mobileMenu>div>button{
     background-color: #2f1793;
     font-family: "DejaVu Sans Condensed";
     border: solid 1px #ffffff;
@@ -109,19 +129,37 @@ nav{
     font-size: 15px;
 }
 
-#mobileMenu>button>a{
+#mobileMenu>div>button>a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+#mobileLogoutBtn{
+    background-color: #2f1793;
+    font-family: "DejaVu Sans Condensed";
+    border: solid 1px #ffffff;
+    padding: 5px 5px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#mobileLogoutBtn>a{
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
 }
 
-
 @media screen and (max-width: 768px) {
-    #auth>button:last-child,#auth>button:first-child{
+
+    #head-link>ul{
         display: none;
     }
 
-    #auth>button:nth-child(2){
+    #signinBtn,#signupBtnNav,#logoutBtn{
+        display: none;
+    }
+
+    #menuBtn{
         background-color: #2f1793;
         font-family: "DejaVu Sans Condensed";
         border: solid 1px #ffffff;

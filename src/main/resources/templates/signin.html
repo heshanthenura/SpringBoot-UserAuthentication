@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +16,9 @@
 
 <div id="formWrapContainer">
     <div id="formWrap">
-        <h1>USER LOGIN</h1>
-        <form action="" id="loginForm">
+        <h1>SIGN IN</h1>
+        <form th:action="@{/signin}" method="post" id="loginForm">
+            <label class="errorLbl" th:text="${errorMessage}"> </label>
             <input id="username" name="username" placeholder="USERNAME" type="text">
             <input id="password" name="password" placeholder="PASSWORD" type="password">
             <div id="rememberAndForgot">
