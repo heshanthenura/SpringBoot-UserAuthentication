@@ -15,6 +15,7 @@ This application can serve as a starting point for developers who want to build 
 <img src="https://user-images.githubusercontent.com/75155192/238149688-45a59969-f970-4c69-b4a0-dd1a9209010e.png">
 7. Secure: The application uses best practices for authentication and authorization to ensure that user data is protected.
 
+###  I am excited to showcase my demo app that highlights the core functionality of a typical web application. However, I understand that each business has its own unique requirements, which is why I am offering additional features such as forgot password, email verification, password change, user detail change, admin panel, and many more based on your specific needs. I can work with you to customize and add any additional features to the app to make it a perfect fit for your business.
 ### If you're interested in custom application development or would like to discuss a project, please don't hesitate to contact me.
 <ul>
     <li><a href="https://twitter.com/Heshantk">Twitter</a></li>
