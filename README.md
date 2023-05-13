@@ -9,10 +9,10 @@ This application can serve as a starting point for developers who want to build 
 
 1. User authentication: Users can sign up for a new account or sign in to an existing one.
 2. "Remember me" option: Users can choose to have their login session persist even after they close their browser.
-3. Password reset flow: Users who forget their password can reset it through an email verification process.
-4. Account details management: Users can update their account details, such as their email address or password.
-5. Admin panel: Authorized users can access an admin panel where they can manage the application and its users.
+<img src="https://user-images.githubusercontent.com/75155192/238149556-12146849-8f84-412f-8cb9-6ebb0249d3a9.png">
+3. Account details management: Users can see their account details, such as their email address or password.
 6. Responsive design: The application is designed to be mobile-friendly and work well on devices of different sizes.
+<img src="https://user-images.githubusercontent.com/75155192/238149688-45a59969-f970-4c69-b4a0-dd1a9209010e.png">
 7. Secure: The application uses best practices for authentication and authorization to ensure that user data is protected.
 
 ### If you're interested in custom application development or would like to discuss a project, please don't hesitate to contact me.
